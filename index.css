@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Distressed&family=Satisfy&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.frist-question {
+    font-family: 'Rubik Distressed', cursive;
+    text-align: center;
+}
+
+.logo {
+    display: flex;
+    box-shadow: 2px 2px 2px gray;
+    justify-content: left;
+}
+
+img {
+    margin: 0 10px;
+}
+
+.box {
+    display: flex;
+    justify-content: right;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    column-gap: 20px;
+
+}
+
+button {
+    text-align: center;
+    border: 2px solid rgb(244, 76, 160);
+    border-radius: 10px;
+    cursor: pointer;
+
+
+}
+
+#button1 {
+    width: 100px;
+    height: 30px;
+    color: rgb(244, 76, 160);
+    background-color: white;
+}
+
+#button2 {
+    background-color: rgb(244, 76, 160);
+    color: white;
+    width: 100px;
+    height: 30px;
+}
+
+#button1:hover {
+    color: black;
+}
+
+#button2:hover {
+    color: black;
+}
+
+.second-question {
+    margin-top: 100px;
+    font-family: 'Rubik Distressed', cursive;
+    padding: 30px;
+    
+}
+
+p {
+    font-family: 'Satisfy', cursive;
+    text-align: center;
+    font-size: 25px;
+    font-weight: bolder;
+    animation: Vishal 2s linear infinite;
+}
+
+@keyframes Vishal {
+    0% {
+        transform: rotateX(0deg);
+    }
+
+    25% {
+        transform: rotateX(30deg);
+    }
+
+    50% {
+        transform: rotateY(90deg);
+    }
+
+    75% {
+        transform: rotateX(180deg);
+    }
+
+    100% {
+        transform: rotateZ(360deg);
+    }
+}
+
+.third-question {
+    margin-top: 100px;
+    font-family: 'Rubik Distressed', cursive;
+    padding: 30px;
+}
+
+.box1 {
+    margin: 10px;
+    width: 300px;
+    height: 150px;
+    border: 1px solid rgb(241, 241, 245);
+    background-color: rgb(203, 171, 129);
+    margin: 20px 30px;
+    transition: width 2s linear;
+
+}
+
+.box1:hover {
+    width: 600px;
+}
+
+.fourth-question {
+    margin-top: 100px;
+    font-family: 'Rubik Distressed', cursive;
+    padding: 30px;
+}
+
+.circle {
+
+    width: 300px;
+    height: 300px;
+    border: 1px solid;
+    border-radius: 50%;
+    background-color: rgb(94, 215, 158);
+}
+
+@media screen and (min-width: 320px) and (max-width: 500px){
+    .frist-question{
+        text-align: left;
+        font-size: 10px;
+    }
+    .box{
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    button{
+        margin-top: 5px;
+    }
+    
+    .logo{
+        align-items: left;
+        justify-content: left;
+
+    }
+    img{
+        width: 200px;
+        height: 80px;
+    }
+    .box1{
+        width: 200px;
+        height: 100px;
+    }
+    .second-question{
+           position: relative;
+           top: -100px;
+           font-size: 12px;
+    }
+    p{
+        position: relative;
+        top: 10px;
+        left: -80px;
+        font-size: 35px;
+    }
+
+
+}
